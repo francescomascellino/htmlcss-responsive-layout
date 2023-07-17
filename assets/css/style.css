@@ -10,6 +10,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+section {
+    padding: 3rem 0;
+}
+
 [class^='col-'] {
     padding: 0 1rem;
 }
@@ -20,8 +24,8 @@ body {
 
 .container {
     max-width: 1152px;
-    width: 80%;
-    margin: auto;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .list-unstyled {
@@ -33,12 +37,13 @@ body {
     display: inline-block;
 }
 
+
 /* #endregion GLOBAL RULES */
 
 /* #region VARIABLES */
 
 :root {
-    --rsp-primary: #9792E4;
+    --rsp-primary: #9593e6;
     --rsp-secondary: #FFFFFF;
     --rsp-heanvenly: #0084FD;
     --rsp-light-heanvenly: #B5DDFF;
@@ -59,12 +64,17 @@ body {
 
 }
 
+.debug section {
+    background-color: rgba(211, 211, 211, 0.5);
+}
+
 .debug .container {
-    border: 1px dashed red;
+    border: 1px solid blue;
+    background-color: rgba(255, 0, 0, 0.5);
 }
 
 .debug .row {
-    background-color: darkcyan;
+    background-color: rgba(0, 139, 19, 0.5);
 }
 
 .debug .logo {
@@ -80,8 +90,13 @@ body {
 }
 
 .debug [class^='col-'] {
-    min-height: 200px;
+    /* min-height: 200px; */
     border: 1px dashed darkmagenta;
+}
+
+.debug .strategic_card,
+.debug .app_dev_card {
+    border: 1px solid black;
 }
 
 /* #endregion DEBUG */
@@ -133,7 +148,6 @@ body {
 
 nav.container {
     padding: 0.9rem 0;
-    margin-bottom: 3rem;
 }
 
 .logo img {
@@ -144,7 +158,7 @@ nav.container {
 
 /* #region SERVICES */
 
-#services>.row>[class^='col-'] {
+#services>.container>.row>[class^='col-'] {
     background-color: azure;
     border-radius: 20px;
     padding-top: 1rem;
@@ -167,6 +181,30 @@ nav.container {
 }
 
 /* #endregion SERVICES */
+
+/* #region PLANNING */
+
+#planning {
+    background-color: var(--rsp-primary);
+}
+
+img.planning {
+    display: block;
+    width: 100%;
+}
+
+.strategic_card,
+.app_dev_card {
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.app_dev_card {
+    border-radius: 20px;
+    background-color: var(--rsp-secondary)
+}
+
+/* #endregion PLANNING */
 
 /* TABLET */
 @media screen and (min-width: 768px) {
@@ -195,14 +233,14 @@ nav.container {
         width: calc(100% / 12 * 4 - 1rem);
     }
 
-    /* .col-md-3 {
-        width: calc(100% / 12 * 3);
-    } */
-
 }
 
 /* DESKTOP */
 @media screen and (min-width: 1440px) {
+
+    #planning>.container {
+        width: 50%;
+    }
 
     .d-block-lg {
         display: block;
@@ -214,6 +252,11 @@ nav.container {
 
     .col-lg-6 {
         width: calc(100% / 12 *6);
+    }
+
+    .d-flex-lg {
+        display: flex;
+        flex-wrap: wrap;
     }
 
 
