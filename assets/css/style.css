@@ -50,21 +50,21 @@ body {
 
 /* #region DEBUG */
 
-.debug * {
+/* .debug * {
     border: 1px solid red;
-}
+} */
 
-header {
+.debug header {
     background-color: aquamarine;
+
 }
 
 .debug .container {
-    border: 1px solid aqua;
-    background-color: #0084FD;
+    border: 1px dashed red;
 }
 
 .debug .row {
-    border: 1px solid rgb(0, 247, 255);
+    background-color: darkcyan;
 }
 
 .debug .logo {
@@ -78,9 +78,6 @@ header {
 .debug .hamburger {
     border: 1px solid sienna;
 }
-
-
-
 
 /* #endregion DEBUG */
 
@@ -122,3 +119,13 @@ header {
 /* #endregion UTILITIES */
 
 /* MOBILE */
+
+/* #region NAVBAR */
+
+nav {
+    padding: 0.9rem 0;
+}
+
+.logo img {
+    display: block;
+}
