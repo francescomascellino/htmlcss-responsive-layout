@@ -99,6 +99,10 @@ section {
     border: 1px solid black;
 }
 
+.debug .avatar_wrapper {
+    border: 1px solid red;
+}
+
 /* #endregion DEBUG */
 
 /* #region UTILITIES */
@@ -110,6 +114,10 @@ section {
 
 .just-btw {
     justify-content: space-between;
+}
+
+.just-cent {
+    justify-content: center;
 }
 
 .align-cent {
@@ -124,9 +132,9 @@ section {
     width: 100%;
 }
 
-/* .col-sm-8 {
+.col-sm-8 {
     width: calc(100% / 12 *8);
-} */
+}
 
 .col-sm-6 {
     width: calc(100% / 12 *6);
@@ -205,6 +213,31 @@ img.planning {
 }
 
 /* #endregion PLANNING */
+
+/* #region TESTIMONIALS */
+
+.testimonlias_intro {
+    text-align: center;
+    padding: 2rem;
+}
+
+.testimonial_card {
+    border-radius: 30px;
+    background-color: var(--rsp-primary);
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.testimonial_avatar {
+    display: block;
+    border-radius: 50%;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+/* #endregion TESTIMONIALS */
 
 /* TABLET */
 @media screen and (min-width: 768px) {
