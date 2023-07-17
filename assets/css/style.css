@@ -79,6 +79,11 @@ body {
     border: 1px solid sienna;
 }
 
+.debug [class^='col-'] {
+    min-height: 200px;
+    border: 1px dashed darkmagenta;
+}
+
 /* #endregion DEBUG */
 
 /* #region UTILITIES */
@@ -116,16 +121,49 @@ body {
     width: calc(100% / 12 *4);
 }
 
+.pad-0 {
+    padding: 0;
+}
+
 /* #endregion UTILITIES */
 
 /* MOBILE */
 
 /* #region NAVBAR */
 
-nav {
+nav.container {
     padding: 0.9rem 0;
+    margin-bottom: 3rem;
 }
 
 .logo img {
     display: block;
 }
+
+/* #endregion NAVBAR */
+
+/* #region SERVICES */
+
+#services>.row>[class^='col-'] {
+    background-color: azure;
+    border-radius: 20px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.app_demo {
+    display: block;
+    width: 100%;
+}
+
+#services>.row>[class^='col-'] h1 {
+    text-align: center;
+    font-size: 6rem;
+}
+
+#services>.row>[class^='col-'] h1~h2 {
+    text-align: center;
+}
+
+/* #endregion SERVICES */
