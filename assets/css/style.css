@@ -14,13 +14,17 @@ section {
     padding: 3rem 0;
 }
 
-[class^='col-'] {
-    padding: 0 1rem;
+.row {
+    /* margin: 0 -1rem; */
+    /* padding: 0 1rem; */
 }
 
-.row {
-    margin: 0 -1rem;
+[class^='col-'] {
+    padding: 0 1rem;
+    /* margin: 0 1rem; */
 }
+
+
 
 .container {
     max-width: 1152px;
@@ -154,6 +158,10 @@ section {
 
 /* #region NAVBAR */
 
+header {
+    background-color: var(--rsp-heanvenly);
+}
+
 nav.container {
     padding: 0.9rem 0;
 }
@@ -167,10 +175,19 @@ nav.container {
 /* #region SERVICES */
 
 #services>.container>.row>[class^='col-'] {
-    background-color: azure;
+    background-color: var(--rsp-light-heanvenly);
     border-radius: 20px;
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
+    margin-bottom: 1.5rem;
+}
+
+#services>.container>.row>[class^='col-'] p {
+    margin-bottom: 1.5rem;
+}
+
+#services>.container>.row>[class^='col-'] a {
+    display: inline-block;
     margin-bottom: 1.5rem;
 }
 
@@ -179,12 +196,12 @@ nav.container {
     width: 100%;
 }
 
-#services>.row>[class^='col-'] h1 {
+#services>.container>.row>[class^='col-'] h1 {
     text-align: center;
     font-size: 6rem;
 }
 
-#services>.row>[class^='col-'] h1~h2 {
+#services>.container>.row>[class^='col-'] h1~h2 {
     text-align: center;
 }
 
@@ -197,6 +214,11 @@ nav.container {
 }
 
 img.planning {
+    display: block;
+    width: 100%;
+}
+
+img.developement {
     display: block;
     width: 100%;
 }
@@ -239,6 +261,28 @@ img.planning {
 
 /* #endregion TESTIMONIALS */
 
+
+/* #region BENEFITS */
+
+#benefits {
+    background-color: var(--rsp-primary);
+}
+
+.title_wrapper {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.benefit_card {
+    background-color: var(--rsp-secondary);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* #endregion BENEFITS */
+
 /* TABLET */
 @media screen and (min-width: 768px) {
 
@@ -263,7 +307,7 @@ img.planning {
     }
 
     .col-md-6 {
-        width: calc(100% / 12 *6 - 1rem);
+        width: calc(100% / 12 * 6 - 1rem);
     }
 
     .col-md-8 {
@@ -294,6 +338,21 @@ img.planning {
         width: 50%;
     }
 
+    #planning>.container>.row {
+        justify-content: space-between;
+    }
+
+    img.developement {
+        width: 50%;
+    }
+
+    .app_dev_card {
+        align-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .d-block-lg {
         display: block;
     }
@@ -303,7 +362,7 @@ img.planning {
     }
 
     .col-lg-6 {
-        width: calc(100% / 12 *6);
+        width: calc(100% / 12 *6 - 1rem);
     }
 
     .d-flex-lg {
@@ -315,9 +374,12 @@ img.planning {
         width: calc(100% / 12 * 2 - 1rem);
     }
 
+    .col-lg-4 {
+        width: calc(100% / 12 * 4 - 1rem);
+    }
+
     .col-lg-10 {
         width: calc(100% / 12 * 10 - 1rem);
     }
-
 
 }
