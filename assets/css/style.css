@@ -1,0 +1,80 @@
+/* #region GLOBAL RULES */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+[class^='col-'] {
+    padding: 0 1rem;
+}
+
+.row {
+    margin: 0 -1rem;
+}
+
+.container {
+    max-width: 1152px;
+    width: 80%;
+    margin: auto;
+}
+
+/* #endregion GLOBAL RULES */
+
+/* #region VARIABLES */
+
+:root {}
+
+/* #endregion VARIABLES */
+
+/* #region DEBUG */
+
+.debug {
+    border: 1px solid red;
+}
+
+/* #endregion DEBUG */
+
+/* #region UTILITIES */
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.just-btw {
+    justify-content: space-between;
+}
+
+.align-cent {
+    align-items: center;
+}
+
+.d-none-sn {
+    display: none;
+}
+
+.col-sm-12 {
+    width: 100%;
+}
+
+.col-sm-8 {
+    width: calc(100% / 12 *8);
+}
+
+.col-sm-6 {
+    width: calc(100% / 12 *6);
+}
+
+.col-sm-4 {
+    width: calc(100% / 12 *4);
+}
+
+/* #endregion UTILITIES */
+
+/* MOBILE */
