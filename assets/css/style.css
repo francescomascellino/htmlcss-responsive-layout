@@ -283,6 +283,42 @@ img.developement {
 
 /* #endregion BENEFITS */
 
+/* #region ABOUT US */
+
+#about {
+    padding: 5rem 0;
+}
+
+.about_us h1 {
+    color: var(--rsp-primary);
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.about_us p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.about_avatar {
+    display: block;
+    border-radius: 50%;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.about_wrapper blockquote {
+    color: var(--rsp-primary);
+    font-size: 1.7rem;
+    font-weight: 800;
+    margin: 1.5rem 0;
+}
+
+/* #endregion ABOUT US */
+
 /* TABLET */
 @media screen and (min-width: 768px) {
 
@@ -308,6 +344,10 @@ img.developement {
 
     .col-md-6 {
         width: calc(100% / 12 * 6 - 1rem);
+    }
+
+    .col-md-7 {
+        width: calc(100% / 12 * 7 - 1rem);
     }
 
     .col-md-8 {
@@ -361,9 +401,7 @@ img.developement {
         display: none;
     }
 
-    .col-lg-6 {
-        width: calc(100% / 12 *6 - 1rem);
-    }
+
 
     .d-flex-lg {
         display: flex;
@@ -374,8 +412,20 @@ img.developement {
         width: calc(100% / 12 * 2 - 1rem);
     }
 
+    .col-lg-3 {
+        width: calc(100% / 12 * 3 - 1rem);
+    }
+
     .col-lg-4 {
         width: calc(100% / 12 * 4 - 1rem);
+    }
+
+    .col-lg-6 {
+        width: calc(100% / 12 *6 - 1rem);
+    }
+
+    .col-lg-8 {
+        width: calc(100% / 12 * 8 - 1rem);
     }
 
     .col-lg-10 {
