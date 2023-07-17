@@ -254,16 +254,35 @@ img.planning {
         justify-content: space-between;
     }
 
+    .col-md-3 {
+        width: calc(100% / 12 * 3 - 1rem);
+    }
+
+    .col-md-4 {
+        width: calc(100% / 12 * 4 - 1rem);
+    }
+
     .col-md-6 {
-        width: calc(100% / 12 *6);
+        width: calc(100% / 12 *6 - 1rem);
     }
 
     .col-md-8 {
         width: calc(100% / 12 * 8 - 1rem);
     }
 
-    .col-md-4 {
-        width: calc(100% / 12 * 4 - 1rem);
+    .col-md-12 {
+        width: 100%;
+    }
+
+    .testimonial_card {
+        justify-content: flex-start;
+        text-align: left;
+        align-items: center;
+        line-height: 2rem;
+    }
+
+    .avatar_wrapper {
+        padding-right: 1rem;
     }
 
 }
@@ -290,6 +309,14 @@ img.planning {
     .d-flex-lg {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .col-lg-2 {
+        width: calc(100% / 12 * 2 - 1rem);
+    }
+
+    .col-lg-10 {
+        width: calc(100% / 12 * 10 - 1rem);
     }
 
 
