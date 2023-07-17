@@ -24,8 +24,6 @@ section {
     /* margin: 0 1rem; */
 }
 
-
-
 .container {
     max-width: 1152px;
     width: 75%;
@@ -318,6 +316,44 @@ img.developement {
 }
 
 /* #endregion ABOUT US */
+
+/* #region CALL TO ACTION */
+
+section#call {
+    background-color: var(--rsp-primary);
+    text-align: center;
+}
+
+section#call h1,
+section#call h2,
+section#call h3,
+section#call p {
+    margin-bottom: 2rem;
+}
+
+section#call a {
+    margin-bottom: 2rem;
+    display: block;
+}
+
+
+section#call span {
+    font-size: 0.8rem;
+}
+
+/* #endregion CALL TO ACTION */
+
+/* #region FOOTER */
+
+footer {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+footer p {
+    margin-bottom: 3rem;
+}
 
 /* TABLET */
 @media screen and (min-width: 768px) {
