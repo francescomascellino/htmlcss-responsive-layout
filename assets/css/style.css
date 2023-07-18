@@ -182,6 +182,14 @@ nav .row {
     margin-left: 2rem;
 }
 
+.btn_white_nav {
+    background-color: var(--rsp-secondary);
+    color: black;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
 /* #endregion NAVBAR */
 
 /* #region SERVICES */
