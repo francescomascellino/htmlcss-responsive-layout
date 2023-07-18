@@ -281,10 +281,40 @@ img.developement {
     margin-bottom: 2rem;
 }
 
+.strategic_card {
+    color: var(--rsp-secondary);
+}
+
+.app_dev_lg_cont {
+    padding: 0;
+}
+
+.strategic_card h2 {
+    margin: 3rem 0;
+}
+
 .app_dev_card {
     border-radius: 20px;
     padding: 2rem;
-    background-color: var(--rsp-secondary)
+    background-color: var(--rsp-secondary);
+    text-align: center;
+}
+
+.app_dev_card h2 {
+    margin: 1rem 0;
+}
+
+.app_dev_card p {
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.app_dev_card a {
+    color: black;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    padding: 0.5rem 1rem;
+    background-color: var(--rsp-primary);
 }
 
 /* #endregion PLANNING */
@@ -448,6 +478,10 @@ footer p {
         width: 100%;
     }
 
+    .strategic_card h2 {
+        font-size: 4rem;
+    }
+
     .testimonial_card {
         justify-content: flex-start;
         text-align: left;
@@ -473,6 +507,10 @@ footer p {
         align-items: flex-end;
     }
 
+    .strategic_card h2 {
+        font-size: 1.5rem;
+    }
+
     .app_dev_lg_cont {
         padding: 0 4rem;
     }
@@ -482,7 +520,6 @@ footer p {
     }
 
     .app_dev_card {
-        align-self: flex-end;
         display: flex;
         flex-direction: column;
         align-items: center;
