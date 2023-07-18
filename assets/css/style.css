@@ -387,8 +387,9 @@ blockquote i {
     background-color: var(--rsp-primary);
 }
 
-.title_wrapper {
+.title_wrapper h1 {
     text-align: center;
+    color: var(--rsp-secondary);
     font-size: 1.5rem;
     margin-bottom: 3rem;
 }
@@ -398,6 +399,35 @@ blockquote i {
     border-radius: 20px;
     padding: 2rem;
     margin-bottom: 2rem;
+}
+
+.benefit_card h1,
+.benefit_card h2 {
+    color: var(--rsp-primary);
+}
+
+.benefit_card h1 {
+    font-size: 4rem;
+}
+
+.benefit_card h2 {
+    margin: 1.5rem 0;
+}
+
+.benefit_card p {
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.btn_violet {
+    background-color: var(--rsp-primary);
+    color: var(--rsp-secondary);
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    padding: 0.5rem 2.5rem;
+    border-radius: 20px;
+    display: inline-block;
 }
 
 /* #endregion BENEFITS */
@@ -529,37 +559,15 @@ footer p {
         padding-right: 1rem;
     }
 
+    .title_wrapper h1 {
+        font-size: 2.5rem;
+    }
+
 }
 
 /* DESKTOP */
 
 @media screen and (min-width: 1440px) {
-
-    #planning>.container {
-        width: 50%;
-    }
-
-    #planning>.container>.row {
-        align-items: flex-end;
-    }
-
-    .strategic_card h2 {
-        font-size: 1.5rem;
-    }
-
-    .app_dev_lg_cont {
-        padding: 0 4rem;
-    }
-
-    img.developement {
-        width: 50%;
-    }
-
-    .app_dev_card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
     .d-block-lg {
         display: block;
@@ -596,6 +604,36 @@ footer p {
 
     .col-lg-2 {
         width: calc(100% / 12 * 2);
+    }
+
+    #planning>.container {
+        width: 50%;
+    }
+
+    #planning>.container>.row {
+        align-items: flex-end;
+    }
+
+    .strategic_card h2 {
+        font-size: 1.5rem;
+    }
+
+    .app_dev_lg_cont {
+        padding: 0 4rem;
+    }
+
+    img.developement {
+        width: 50%;
+    }
+
+    .app_dev_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title_wrapper h1 {
+        font-size: 3rem;
     }
 
 }
