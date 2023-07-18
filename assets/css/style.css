@@ -17,6 +17,8 @@ section {
 .row {
     /* margin: 0 -1rem; */
     /* padding: 0 1rem; */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 [class^='col-'] {
