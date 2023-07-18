@@ -466,7 +466,7 @@ blockquote i {
 .quotes_ico {
     position: absolute;
     right: 0;
-    top: -10%;
+    bottom: calc(100% - 96px);
     color: var(--rsp-primary);
     font-size: 6rem;
 }
@@ -545,13 +545,20 @@ section#call span {
 /* #region FOOTER */
 
 footer {
+    background-color: var(--rsp-footer);
     font-size: 0.8rem;
     text-align: center;
     padding: 2.5rem;
+    color: var(--rsp-secondary);
 }
 
 footer p {
     margin-bottom: 3rem;
+}
+
+footer a {
+    color: var(--rsp-primary);
+    text-decoration: underline;
 }
 
 /* #endregion FOOTER */
