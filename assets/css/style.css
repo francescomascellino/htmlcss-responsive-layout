@@ -178,10 +178,6 @@ nav.row {
 /* #region SERVICES */
 
 #services>.container>.row>[class^='col-'] {
-    /* background-color: var(--rsp-light-heanvenly);
-    border-radius: 20px;
-    padding-top: 1rem; */
-    /* padding-bottom: 1rem; */
     margin-bottom: 1.5rem;
 }
 
@@ -192,6 +188,10 @@ nav.row {
 #services>.container>.row>[class^='col-'] a {
     display: inline-block;
     margin-bottom: 1.5rem;
+}
+
+.service_card.get_demo {
+    padding-bottom: 0;
 }
 
 .app_demo {
@@ -269,7 +269,6 @@ img.developement {
 }
 
 /* #endregion TESTIMONIALS */
-
 
 /* #region BENEFITS */
 
@@ -365,6 +364,8 @@ footer p {
     margin-bottom: 3rem;
 }
 
+/* #endregion FOOTER */
+
 /* TABLET */
 @media screen and (min-width: 768px) {
 
@@ -426,11 +427,6 @@ footer p {
         align-items: flex-end;
     }
 
-    /* .strategic_card,
-.app_dev_card {
-    margin: 2rem;
-} */
-
     .app_dev_lg_cont {
         padding: 0 4rem;
     }
@@ -444,7 +440,6 @@ footer p {
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* padding: 1rem; */
     }
 
     .d-block-lg {
