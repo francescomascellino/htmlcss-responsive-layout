@@ -451,8 +451,6 @@ blockquote i {
     margin-bottom: 3rem;
 }
 
-
-
 .quote_pic_wrapper {
     position: relative;
 }
@@ -496,6 +494,7 @@ blockquote i {
 section#call {
     background-color: var(--rsp-primary);
     text-align: center;
+    color: var(--rsp-secondary);
 }
 
 section#call h1,
@@ -505,12 +504,39 @@ section#call p {
     margin-bottom: 2rem;
 }
 
-section#call a {
+section#call h3 {
+    text-transform: uppercase;
+    font-weight: 100;
     margin-bottom: 2rem;
-    display: block;
+}
+
+section#call h1 {
+    color: var(--rsp-special);
+    font-size: 3.5rem;
+}
+
+section#call span a {
+    margin-bottom: 2rem;
+    text-decoration: underline;
+}
+
+.btn_big {
+    display: inline-block;
+    margin-bottom: 2rem;
+    background-color: var(--rsp-secondary);
+    color: var(--rsp-primary);
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    padding: 1rem 3rem;
+    border-radius: 30px;
+}
+
+section#call p {
+    line-height: 2rem;
 }
 
 section#call span {
+    display: block;
     font-size: 0.8rem;
 }
 
@@ -584,6 +610,14 @@ footer p {
 
     .title_wrapper h1 {
         font-size: 2.5rem;
+    }
+
+    section#call h2 {
+        font-size: 2.5rem;
+    }
+
+    section#call h1 {
+        font-size: 5.5rem;
     }
 
 }
