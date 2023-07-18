@@ -15,8 +15,7 @@ section {
 }
 
 .row {
-    /* margin: 0 -1rem; */
-    /* padding: 0 1rem; */
+    margin: 0 -1rem;
     display: flex;
     flex-wrap: wrap;
 }
@@ -166,6 +165,10 @@ nav.container {
     padding: 0.9rem 0;
 }
 
+nav.row {
+    margin: 0 auto;
+}
+
 .logo img {
     display: block;
 }
@@ -175,9 +178,9 @@ nav.container {
 /* #region SERVICES */
 
 #services>.container>.row>[class^='col-'] {
-    background-color: var(--rsp-light-heanvenly);
+    /* background-color: var(--rsp-light-heanvenly);
     border-radius: 20px;
-    padding-top: 1rem;
+    padding-top: 1rem; */
     /* padding-bottom: 1rem; */
     margin-bottom: 1.5rem;
 }
@@ -194,6 +197,12 @@ nav.container {
 .app_demo {
     display: block;
     width: 100%;
+}
+
+.service_card {
+    background-color: var(--rsp-light-heanvenly);
+    border-radius: 20px;
+    padding: 1rem;
 }
 
 #services>.container>.row>[class^='col-'] h1 {
@@ -225,12 +234,12 @@ img.developement {
 
 .strategic_card,
 .app_dev_card {
-    padding: 2rem;
     margin-bottom: 2rem;
 }
 
 .app_dev_card {
     border-radius: 20px;
+    padding: 2rem;
     background-color: var(--rsp-secondary)
 }
 
@@ -370,23 +379,23 @@ footer p {
     }
 
     .col-md-3 {
-        width: calc(100% / 12 * 3 - 1rem);
+        width: calc(100% / 12 * 3);
     }
 
     .col-md-4 {
-        width: calc(100% / 12 * 4 - 1rem);
+        width: calc(100% / 12 * 4);
     }
 
     .col-md-6 {
-        width: calc(100% / 12 * 6 - 1rem);
+        width: calc(100% / 12 * 6);
     }
 
     .col-md-7 {
-        width: calc(100% / 12 * 7 - 1rem);
+        width: calc(100% / 12 * 7);
     }
 
     .col-md-8 {
-        width: calc(100% / 12 * 8 - 1rem);
+        width: calc(100% / 12 * 8);
     }
 
     .col-md-12 {
@@ -414,7 +423,16 @@ footer p {
     }
 
     #planning>.container>.row {
-        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    /* .strategic_card,
+.app_dev_card {
+    margin: 2rem;
+} */
+
+    .app_dev_lg_cont {
+        padding: 0 4rem;
     }
 
     img.developement {
@@ -426,6 +444,7 @@ footer p {
         display: flex;
         flex-direction: column;
         align-items: center;
+        /* padding: 1rem; */
     }
 
     .d-block-lg {
@@ -442,27 +461,27 @@ footer p {
     }
 
     .col-lg-10 {
-        width: calc(100% / 12 * 10 - 1rem);
+        width: calc(100% / 12 * 10);
     }
 
     .col-lg-8 {
-        width: calc(100% / 12 * 8 - 1rem);
+        width: calc(100% / 12 * 8);
     }
 
     .col-lg-6 {
-        width: calc(100% / 12 *6 - 1rem);
+        width: calc(100% / 12 *6);
     }
 
     .col-lg-4 {
-        width: calc(100% / 12 * 4 - 1rem);
+        width: calc(100% / 12 * 4);
     }
 
     .col-lg-3 {
-        width: calc(100% / 12 * 3 - 1rem);
+        width: calc(100% / 12 * 3);
     }
 
     .col-lg-2 {
-        width: calc(100% / 12 * 2 - 1rem);
+        width: calc(100% / 12 * 2);
     }
 
 }
