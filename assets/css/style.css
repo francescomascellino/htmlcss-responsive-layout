@@ -451,6 +451,12 @@ blockquote i {
     margin-bottom: 3rem;
 }
 
+
+
+.quote_pic_wrapper {
+    position: relative;
+}
+
 .about_avatar {
     display: block;
     border-radius: 50%;
@@ -459,11 +465,28 @@ blockquote i {
     object-fit: cover;
 }
 
+.quotes_ico {
+    position: absolute;
+    right: 0;
+    top: -10%;
+    color: var(--rsp-primary);
+    font-size: 6rem;
+}
+
 .about_wrapper blockquote {
     color: var(--rsp-primary);
     font-size: 1.7rem;
     font-weight: 800;
     margin: 1.5rem 0;
+}
+
+.btn_linkedin {
+    background-color: var(--rsp-primary);
+    color: var(--rsp-secondary);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    display: inline-block;
 }
 
 /* #endregion ABOUT US */
