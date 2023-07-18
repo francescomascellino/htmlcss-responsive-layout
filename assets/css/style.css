@@ -14,17 +14,19 @@ section {
     padding: 3rem 0;
 }
 
+/* ROW: CONTIENE LA PROPRIETA' FLEX E HA DEI MARGINI NEGATIVI AI LATI PER COMPENSARE IL PADDING ALATERALI DELLE COLONNE */
 .row {
     margin: 0 -1rem;
     display: flex;
     flex-wrap: wrap;
 }
 
+/* LE COLONNE HANNO UN PADDING PER CREARE LA SPAZIATURA TRA I FLEX-ITEMS E CONTENGONO I VARI ELEMENTI/CARD */
 [class^='col-'] {
     padding: 0 1rem;
-    /* margin: 0 1rem; */
 }
 
+/* CONTAINER: DA UNA LARGHEZZA MASSIMA */
 .container {
     max-width: 1152px;
     width: 75%;
