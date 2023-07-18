@@ -40,6 +40,11 @@ section {
     display: inline-block;
 }
 
+a {
+    color: var(--rsp-secondary);
+    text-decoration: none;
+}
+
 
 /* #endregion GLOBAL RULES */
 
@@ -165,12 +170,16 @@ nav.container {
     padding: 0.9rem 0;
 }
 
-nav.row {
+nav .row {
     margin: 0 auto;
 }
 
 .logo img {
     display: block;
+}
+
+.menu-lg>ul li+li {
+    margin-left: 2rem;
 }
 
 /* #endregion NAVBAR */
@@ -367,6 +376,7 @@ footer p {
 /* #endregion FOOTER */
 
 /* TABLET */
+
 @media screen and (min-width: 768px) {
 
     .container {
@@ -417,6 +427,7 @@ footer p {
 }
 
 /* DESKTOP */
+
 @media screen and (min-width: 1440px) {
 
     #planning>.container {
