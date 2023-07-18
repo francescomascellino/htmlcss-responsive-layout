@@ -306,6 +306,7 @@ img.developement {
 
 .app_dev_card p {
     font-style: italic;
+    line-height: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
@@ -321,9 +322,26 @@ img.developement {
 
 /* #region TESTIMONIALS */
 
-.testimonlias_intro {
+.testimonials_intro {
     text-align: center;
     padding: 2rem;
+}
+
+.testimonials_intro h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.testimonials_intro h1 {
+    font-size: 2.5rem;
+    color: var(--rsp-primary);
+    margin-bottom: 2rem;
+}
+
+.testimonials_intro p {
+    line-height: 2rem;
+    margin-bottom: 1rem;
 }
 
 .testimonial_card {
@@ -340,6 +358,25 @@ img.developement {
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
+}
+
+.quote_wrapper {
+    margin: 1rem 0;
+    color: var(--rsp-secondary);
+    line-height: 2rem;
+}
+
+blockquote {
+    margin-bottom: 2rem;
+}
+
+blockquote i {
+    font-size: 1.3rem;
+}
+
+.quote_wrapper span {
+    text-transform: uppercase;
+    font-size: 1.2rem;
 }
 
 /* #endregion TESTIMONIALS */
@@ -486,7 +523,6 @@ footer p {
         justify-content: flex-start;
         text-align: left;
         align-items: center;
-        line-height: 2rem;
     }
 
     .avatar_wrapper {
