@@ -205,7 +205,7 @@ nav.row {
     padding: 1rem;
 }
 
-#services>.container>.row>[class^='col-'] h1 {
+.serv_icon {
     text-align: center;
     font-size: 6rem;
 }
